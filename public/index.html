@@ -752,6 +752,9 @@
           </div>
           <div class="download-buttons" id="download-buttons">
             {% if filename %}
+          <div class="download-note" style="margin-top: 15px; padding: 10px; background-color: #f8f9fa; border-radius: 5px; font-size: 14px; color: #6c757d; text-align: center;">
+            <strong>Note:</strong> Files are temporarily stored and may expire. If downloads fail, please upload your file again.
+          </div>
               <button class="download-btn download-pdf" 
                       data-file-path="/api/download/pdf/{{ filename }}"
                       data-file-name="{{ original_filename | replace('.md', '') | replace('.markdown', '') }}">
@@ -769,6 +772,9 @@
             {% endif %}
           </div>
           {% if filename %}
+          <div class="download-note" style="margin-top: 15px; padding: 10px; background-color: #f8f9fa; border-radius: 5px; font-size: 14px; color: #6c757d; text-align: center;">
+            <strong>Note:</strong> Files are temporarily stored and may expire. If downloads fail, please upload your file again.
+          </div>
             <div data-filename="{{ filename }}" style="display: none;"></div>
           {% endif %}
         </div>
